@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f7f1;
+  }
+  
+  .login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-card {
+    background-color: #fefdf8;
+    padding: 50px 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    width: 380px;
+  }
+  
+  .login-header {
+    font-size: 32px;
+    font-family: 'Georgia', serif;
+    color: #2e5c3e;
+    margin-bottom: 10px;
+  }
+  
+  .login-subtext {
+    font-size: 14px;
+    color: #4f4f4f;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 16px;
+    border-radius: 25px;
+    border: 1px solid #cfcfcf;
+    font-size: 14px;
+    background-color: #ffffff;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #2e5c3e;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #264c33;
+  }
+  
+  .signup-prompt {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #3e3e3e;
+  }
+  
+  .signup-prompt a {
+    color: #2e5c3e;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .signup-prompt a:hover {
+    text-decoration: underline;
+  }
+  
+  .divider {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #8b8b8b;
+    position: relative;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: "";
+    height: 1px;
+    background: #ccc;
+    flex: 1;
+    margin: 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .back-button {
+    margin-top: 16px;
+    background-color: transparent;
+    border: 1px solid #2e5c3e;
+    color: #2e5c3e;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .back-button:hover {
+    background-color: #2e5c3e;
+    color: white;
+  }
+  

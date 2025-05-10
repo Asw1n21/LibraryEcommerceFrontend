@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f7f1;
+  }
+  
+  .signup-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .signup-card {
+    background-color: #fefdf8;
+    padding: 50px 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    width: 400px;
+  }
+  
+  .signup-header {
+    font-size: 28px;
+    font-family: 'Georgia', serif;
+    color: #2e5c3e;
+    margin-bottom: 10px;
+  }
+  
+  .signup-subtext {
+    font-size: 14px;
+    color: #4f4f4f;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 16px;
+    border-radius: 25px;
+    border: 1px solid #d0d0d0;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  .signup-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #2e5c3e;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-button:hover {
+    background-color: #264c33;
+  }
+  
+  .login-prompt {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #3e3e3e;
+  }
+  
+  .login-prompt a {
+    color: #2e5c3e;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .login-prompt a:hover {
+    text-decoration: underline;
+  }
+  

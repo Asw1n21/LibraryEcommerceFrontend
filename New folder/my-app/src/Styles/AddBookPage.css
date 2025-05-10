@@ -1,0 +1,163 @@
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  background-color: #2e5c3e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 25px;
+  gap: 25px;
+  min-height: 100vh;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.sidebar button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px 0;
+  transition: background 0.3s ease;
+}
+
+.sidebar button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+
+.main {
+  flex-grow: 1;
+  padding: 40px;
+  background-color: #f5f5f5;
+}
+
+.main h1 {
+  text-align: center;
+  color: #2e5c3e;
+}
+
+.form-grid {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-column input,
+.form-column select,
+.form-column textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.submit-btn {
+  background-color: #2e5c3e;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.section-title {
+  margin-top: 30px;
+  color: #2e5c3e;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.card-image-section {
+  width: 120px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px 20px;
+  flex-grow: 1;
+  font-size: 14px;
+  color: #333;
+}
+
+.description {
+  grid-column: span 5;
+}
+
+.card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-btn, .delete-btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #28a745;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
