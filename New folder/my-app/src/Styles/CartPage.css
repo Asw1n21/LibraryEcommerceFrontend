@@ -1,0 +1,21 @@
+.cart-page {
+  padding: 20px;
+}
+
+.cart-card {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.cart-card img {
+  width: 100px;
+  height: auto;
+}
+
+.cart-card h4 {
+  margin: 0;
+}

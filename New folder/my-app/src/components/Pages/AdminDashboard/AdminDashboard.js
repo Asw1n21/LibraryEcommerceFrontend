@@ -1,12 +1,20 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaUsers, FaBook, FaBullhorn, FaSignOutAlt, FaClipboardList } from 'react-icons/fa';
+import { FaTags } from 'react-icons/fa';
 import '../../../Styles/AdminDashboard.css';
 
 function AdminDashboard() {
   const [activeSection, setActiveSection] = useState('users');
   const navigate = useNavigate();
 
+/*************  ✨ Windsurf Command ⭐  *************/
+/**
+ * Logs the user out by removing the user's data from local storage
+ * and redirects them to the homepage.
+ */
+
+/*******  77594e11-01a8-4f3d-8c74-b8a0498313b7  *******/
   const handleLogout = () => {
     localStorage.removeItem('user');
     navigate('/');
@@ -34,6 +42,9 @@ function AdminDashboard() {
           <button className="nav-button" onClick={() => setActiveSection('users')}>
             <FaUsers /> Manage Users
           </button>
+          <button className="nav-button" onClick={() => navigate('/admin/categories')}>
+  <FaTags /> Manage Categories
+</button>
           <button className="nav-button" onClick={() => navigate('/admin/add-book')}>
             <FaBook /> Add Book
           </button>
@@ -43,6 +54,7 @@ function AdminDashboard() {
           <button className="nav-button" onClick={() => setActiveSection('announcements')}>
             <FaBullhorn /> Add Announcement
           </button>
+
         </div>
 
         <button className="nav-button logout-button" onClick={handleLogout}>

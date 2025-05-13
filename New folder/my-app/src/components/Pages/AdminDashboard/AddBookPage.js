@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../../../Styles/AddBookPage.css";
+import { FaTags } from 'react-icons/fa';
 import { FaUsers, FaBook, FaBullhorn, FaSignOutAlt } from "react-icons/fa";
 
 function AddBookPage() {
@@ -66,6 +67,9 @@ function AddBookPage() {
         <div className="nav-group">
           <button className="nav-button" onClick={() => navigate('/admin/dashboard')}>
             <FaUsers /> Manage Users
+          </button>
+              <button className="nav-button" onClick={() => navigate('/admin/categories')}>
+            <FaTags /> Manage Categories
           </button>
           <button className="nav-button" onClick={() => navigate('/admin/add-book')}>
             <FaBook /> Add Book
