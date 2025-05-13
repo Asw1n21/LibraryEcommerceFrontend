@@ -8,6 +8,7 @@ import AddBookPage from './components/Pages/AdminDashboard/AddBookPage';
 import CategoryPage from './components/Pages/AdminDashboard/CategoryPage';
 import StaffDashboard from './components/Pages/StaffDashboard';
 import CartPage from './components/Pages/CartPage';
+import BookmarkPage from './components/Pages/BookmarkPage';
 function App() {
   return (
     <Router>
@@ -20,6 +21,7 @@ function App() {
         <Route path="/admin/categories" element={<CategoryPage />} />
         <Route path="/staff/dashboard" element={<StaffDashboard />} />
         <Route path="/cart" element={<CartPage />} />
+        <Route path="/bookmarks" element={<BookmarkPage />} />
       </Routes>
     </Router>
   );
